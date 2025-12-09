@@ -4,89 +4,145 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <!-- PROFILE -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Innovative AI Engineer with expertise in autonomous workflows, LLM
+    optimization, hybrid AI architectures, and multi-agent systems.
+    Currently contributing to IBM Research by refactoring legacy tools,
+    benchmarking Granite models, and designing intelligent orchestration
+    frameworks for enterprise automation.
   </div>
 
+  <!-- EDUCATION -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="B.S. Computer Engineering"
+      subtitle="2021 – Present at PUC-Campinas, Campinas, Brazil | GPA 3.0 / 4.0 | Expected graduation: June 2026"
     />
   </div>
 
+  <!-- EXPERIENCE -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Experience</div>
   </div>
 
   <div class="time-line-container mb-10">
+    <!-- IBM Research -->
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="AI Engineer Intern at IBM Research"
+      subtitle="2024 – Present, Hortolândia, São Paulo, Brazil"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      • Refactored legacy executive reporting tools, reducing codebase size by
+      50% and automating data ingestion with Pandas and OpenPyXL.<br />
+      • Contributed to a Hybrid AI Architecture patent disclosure, designing a
+      cognitive agent router and context engineering mechanisms.<br />
+      • Engineered benchmarking arenas for Granite models using vLLM and Milvus
+      to optimize inference performance and hardware selection.<br />
+      • Developed multi-agent literature review systems presented at CUI 2025
+      and ERGODESIGN & USIHC 2025.<br />
+      • Assessed AI orchestration frameworks (LangChain, LangGraph, Langflow,
+      CrewAI, Watson Orchestrate) for enterprise use.<br />
+      • Built autonomous agents via AutoGen and Ollama, including a
+      RAG-powered conference assistant.<br />
+      • Designed the architecture for Symphony Orchestration, a Slack-integrated
+      system coordinating Market Intelligence and Guardian agents.<br />
+      • Developed HCI research interfaces using React, Next.js, TypeScript, and
+      Airtable.
     </TimeLineElement>
+
+    <!-- PUC Research -->
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Undergraduate Research Assistant at PUC-Campinas"
+      subtitle="2023 – 2024, Campinas, Brazil"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      • Developed an end-to-end computer vision pipeline for skin lesion
+      classification using CNNs and transfer learning.<br />
+      • Implemented data augmentation to improve model generalization and
+      resolve dataset imbalances.<br />
+      • Conducted autonomous research using TensorFlow, Pandas, and NumPy for
+      scientific image processing.
     </TimeLineElement>
   </div>
 
+  <!-- PROJECTS -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Projects</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Aegis: Dynamic Agent Interoperability Framework (B.S. Thesis)"
+      subtitle="2025 – Present"
+    >
+      • Engineered a framework unifying heterogeneous agents via A2A and MCP.<br />
+      • Designed a central intelligent orchestrator with a gateway agent for
+      dynamic routing.<br />
+      • Built a cognitive memory router integrating semantic and window memory.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="BioKnowDes: Space Biology Knowledge Engine (NASA Space Apps 2025)"
+      subtitle="09/2025"
+    >
+      • Built an AI-driven engine to ingest, summarize, and connect NASA
+      bioscience research.<br />
+      • Implemented a RAG pipeline linking distinct biological effects across
+      studies.<br />
+      • Created an interactive dashboard to visualize relationships between
+      spaceflight experiments.
+    </TimeLineElement>
+  </div>
+
+  <!-- CERTIFICATIONS -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+    <li>IBM Generative & Agentic AI Foundation — IBM, 2025</li>
+    <li>watsonx.ai Data Science and MLOps Sales Foundation — IBM, 2025</li>
+    <li>Anthropic Model Context Protocol: Advanced Topics — Anthropic, 2025</li>
+    <li>Deep Learning using TensorFlow — IBM, 2025</li>
+    <li>Generative AI — Databricks, 2024</li>
   </ul>
 
+  <!-- SKILLS -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>Python</li>
+    <li>JavaScript / TypeScript</li>
+    <li>C++</li>
+    <li>Java</li>
+    <li>PyTorch</li>
+    <li>TensorFlow</li>
+    <li>Scikit-Learn</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>LangChain</li>
+    <li>AutoGen</li>
+    <li>LangGraph</li>
+    <li>Langflow</li>
+    <li>Watsonx</li>
+    <li>LangSmith</li>
+    <li>Langfuse</li>
+    <li>Mellea</li>
+    <li>MongoDB</li>
+    <li>Milvus / Chroma / Astra</li>
+    <li>vLLM</li>
+    <li>Ollama</li>
+    <li>gRPC</li>
+    <li>MCP</li>
+    <li>A2A</li>
   </ul>
 </BaseLayout>
